@@ -1,0 +1,47 @@
+baseURL = "https://example.com/"
+languageCode = "en-us"
+title = "Your Name"
+
+[params]
+  name = "Your Name"
+  tagline = "A few words about what you do."
+  photo = "/images/profile.jpg"
+
+[[params.socials]]
+  name = "GitHub"
+  url = "https://github.com/yourusername"
+
+[[params.socials]]
+  name = "LinkedIn"
+  url = "https://linkedin.com/in/yourusername"
+
+[[params.socials]]
+  name = "Twitter/X"
+  url = "https://x.com/yourusername"
+
+[[params.socials]]
+  name = "Email"
+  url = "mailto:you@example.com"
+
+[[menu.main]]
+  name = "Home"
+  url = "/"
+  weight = 1
+
+[[menu.main]]
+  name = "Projects"
+  url = "/projects/"
+  weight = 2
+
+[[menu.main]]
+  name = "Blog"
+  url = "/blog/"
+  weight = 3
+
+[[menu.main]]
+  name = "About"
+  url = "/about/"
+  weight = 4
+
+[markup.goldmark.renderer]
+  unsafe = true

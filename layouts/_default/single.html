@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ .Title }} — {{ .Site.Params.name }}</title>
+  <link rel="stylesheet" href="{{ "css/style.css" | absURL }}">
+</head>
+<body>
+  {{ partial "header.html" . }}
+
+  <article class="wrap page-content single">
+    <h1>{{ .Title }}</h1>
+    {{ if .Date }}<p class="date">{{ .Date.Format "January 2, 2006" }}</p>{{ end }}
+    {{ .Content }}
+  </article>
+
+  {{ partial "footer.html" . }}
+</body>
+</html>

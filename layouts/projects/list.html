@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ .Title }} — {{ .Site.Params.name }}</title>
+  <link rel="stylesheet" href="{{ "css/style.css" | absURL }}">
+</head>
+<body>
+  {{ partial "header.html" . }}
+
+  <section class="wrap page-content">
+    <h1>{{ .Title }}</h1>
+    {{ .Content }}
+
+    <div class="project-grid">
+      {{ range .Pages.ByWeight }}
+        <a class="project-card" href="{{ if .Params.link }}{{ .Params.link }}{{ else }}{{ .Permalink }}{{ end }}" {{ if .Params.link }}target="_blank" rel="noopener"{{ end }}>
+          {{ if .Params.image }}
+            <div class="project-thumb">
+              <img src="{{ .Params.image | absURL }}" alt="{{ .Title }}" onerror="this.parentElement.style.display='none';">
+            </div>
+          {{ end }}
+          <div class="project-body">
+            <h3>{{ .Title }}</h3>
+            <p>{{ .Params.summary | default .Summary }}</p>
+            {{ if .Params.tags }}
+              <div class="project-tags">
+                {{ range .Params.tags }}<span>{{ . }}</span>{{ end }}
+              </div>
+            {{ end }}
+          </div>
+        </a>
+      {{ end }}
+    </div>
+  </section>
+
+  {{ partial "footer.html" . }}
+</body>
+</html>
