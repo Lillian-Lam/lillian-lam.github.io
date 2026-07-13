@@ -1,4 +1,4 @@
-baseURL = "https://example.com/"
+baseURL = "https://lillian-lam.github.io/"
 languageCode = "en-us"
 title = "Your Name"
 
@@ -9,19 +9,16 @@ title = "Your Name"
 
 [[params.socials]]
   name = "GitHub"
-  url = "https://github.com/yourusername"
+  url = "https://github.com/Lillian-Lam"
 
 [[params.socials]]
   name = "LinkedIn"
-  url = "https://linkedin.com/in/yourusername"
+  url = "https://linkedin.com/in/lillian-ngating-lam/"
 
-[[params.socials]]
-  name = "Twitter/X"
-  url = "https://x.com/yourusername"
 
 [[params.socials]]
   name = "Email"
-  url = "mailto:you@example.com"
+  url = "lillianngatinglam@gmail.com"
 
 [[menu.main]]
   name = "Home"
