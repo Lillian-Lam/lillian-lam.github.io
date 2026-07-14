@@ -3,9 +3,9 @@ languageCode = "en-us"
 title = "Your Name"
 
 [params]
-  name = "Your Name"
-  tagline = "A few words about what you do."
-  photo = "/images/profile.jpg"
+  name = "Lillian Lam"
+  tagline = "BME & AMS | Graduate Researcher @ JHU"
+  photo = "/images/profile_picture.jpeg"
 
 [[params.socials]]
   name = "GitHub"
