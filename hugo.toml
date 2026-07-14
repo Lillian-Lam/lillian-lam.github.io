@@ -5,7 +5,7 @@ title = "Your Name"
 [params]
   name = "Lillian Lam"
   tagline = "BME & AMS | Graduate Researcher @ JHU"
-  photo = "/images/profile_picture.jpeg"
+  photo = "/images/profile_picture.png"
 
 [[params.socials]]
   name = "GitHub"
